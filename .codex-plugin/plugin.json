@@ -1,0 +1,37 @@
+{
+  "name": "reddit-pain-finder",
+  "version": "0.1.0",
+  "description": "Turn an offer into pain-first Reddit queries, ranked live threads, and thread-specific reply drafts.",
+  "author": {
+    "name": "William Flanagan",
+    "email": "wflanagan@audienti.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": "https://github.com/audienti/reddit-pain-finder",
+  "repository": "https://github.com/audienti/reddit-pain-finder",
+  "keywords": [
+    "reddit",
+    "pain-discovery",
+    "prospecting",
+    "buyer-research",
+    "reply-drafting"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Reddit Pain Finder",
+    "shortDescription": "Find real Reddit threads where prospects describe the problem in their own words.",
+    "longDescription": "Turns an offer URL or short offer summary into pain-first Reddit search queries, runs bounded discovery against the Apify Reddit scraper, ranks the best threads by buyer fit and urgency, filters self-promo and AI slop, and drafts thread-specific public replies when needed.",
+    "developerName": "William Flanagan",
+    "category": "Sales",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Find Reddit pain for this offer and show the best threads.",
+      "Turn this offer into Reddit search queries, findings, and reply drafts.",
+      "Find real Reddit conversations where this ICP is complaining about the problem."
+    ],
+    "brandColor": "#FF4500"
+  }
+}
