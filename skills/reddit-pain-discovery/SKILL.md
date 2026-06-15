@@ -40,10 +40,14 @@ Convert an offer into ranked Reddit conversations that expose real buyer pain an
 - Use `dm only` sparingly: only when the thread explicitly asks for private follow-up, requests vendor recommendations off-thread, or subreddit norms make public vendor participation inappropriate.
 - Do not use `DM me` or soft-gated CTA language in public replies.
 - When asked for a reply, write a thread-specific reply that references concrete facts from the post and gives real help. Do not generate generic “example replies.”
+- Before drafting a reply, classify the thread using `references/reply-modes.md`.
 - Replies should sound like a practitioner, not a marketer: casual, concrete, and useful. Avoid pitches unless the user explicitly wants a commercialization pass.
 - Prefer 2-4 short paragraphs over one dense block.
 - Avoid em dashes, semicolons, and colon-heavy phrasing in drafted replies because they make the comment read overly polished or AI-shaped.
 - Prefer plainspoken wording over compressed, high-density phrasing.
+- Match the thread's emotional frame. A vent thread needs pattern recognition and restraint, not a management framework.
+- If a thread is mostly venting about an industry-wide pattern, do not force `QBR`, `scorecard`, `RCA`, or procurement-process language unless the author is already speaking that way.
+- If the author accuses the reply of being AI, fake, or shilly, do not defend the toolchain, do not explain how the comment was written, and do not keep arguing. Disengage.
 - Hard-drop obvious self-promo, owned-channel marketing, hiring posts, cofounder ads, newsletter sponsor asks, official vendor content, and pure product-launch threads unless the user explicitly wants supply-side research.
 - Apply a second penalty layer for low-substance AI slop so buzzword-heavy threads do not outrank real operator pain.
 - Penalize hobbyist, student, meme, and off-topic threads unless the user explicitly wants them.
@@ -154,6 +158,7 @@ Convert an offer into ranked Reddit conversations that expose real buyer pain an
    - Show the search family that found each thread.
    - Include the matched pain, evidence snippet, why it matters, the engagement mode, and a suggested reply or research angle.
    - If the user asks for a reply, provide a concrete draft for the highest-priority threads. The draft must be specific to the thread, not a generic template.
+   - Note the `reply mode` used for each drafted reply when it affects tone or structure.
 
 9. Update memory.
    - Update `memory/lessons.md` when a lesson should apply across domains and future offers.

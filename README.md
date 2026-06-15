@@ -91,6 +91,7 @@ skills/reddit-pain-discovery/assets/finding-template.md
 skills/reddit-pain-discovery/references/apify-reddit-scraper.md
 skills/reddit-pain-discovery/references/pain-query-framework.md
 skills/reddit-pain-discovery/references/reddit-engagement-rubric.md
+skills/reddit-pain-discovery/references/reply-modes.md
 skills/reddit-pain-discovery/scripts/resolve_memory.py
 skills/reddit-pain-discovery/memory/README.md
 skills/reddit-pain-discovery/memory/lessons.md

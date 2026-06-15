@@ -1,6 +1,6 @@
 {
   "name": "reddit-pain-finder",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Turn an offer into pain-first Reddit queries, ranked live threads, and thread-specific reply drafts.",
   "author": {
     "name": "William Flanagan",

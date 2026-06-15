@@ -48,6 +48,10 @@ Each lesson follows this structure:
 **What happened:** Discovery runs used broad actor time windows like `month`, but that can be mistaken for a true last-48-hours feed if the report is sloppy.
 **Rule:** Always report actor `searchTime` separately from any post-run `createdAt` cutoff. Only call a queue `last 48 hours` when a true rolling 48-hour filter was applied.
 
+### 2026-06-15 | Vent threads are not operator-advice threads
+**What happened:** A reply that used process language like `scorecard`, `QBR`, and `RCA` landed badly in a thread that was mainly venting about an industry-wide support decline.
+**Rule:** Classify reply mode before drafting. Vent threads need pattern recognition and restraint, not a management framework. If the author calls the reply AI or shilly, disengage instead of defending the toolchain.
+
 ## Active Rules
 
 1. Read `lessons.md` before building queries.

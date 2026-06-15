@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1 - 2026-06-15
+
+- Added explicit reply modes for vent threads, operator-advice threads, diagnostic threads, and recommendation threads.
+- Added a disengagement rule for AI or shill accusations so the skill stops escalating bad thread dynamics.
+- Added a new lesson about vent-thread mismatch and over-structured replies.
+
 ## 0.1.0 - 2026-06-15
 
 - Packaged Reddit Pain Finder as a standalone Codex and Claude Code plugin.
