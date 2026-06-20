@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.2 - 2026-06-20
+
+- Renamed the user-facing plugin surface to Reddit Signal Finder.
+- Tightened the publish contract to `raw surfaces -> engage_now -> discard`.
+- Documented bounded-community and seeded-surface Reddit discovery as the
+  default goodput path instead of broad all-Reddit search.
+
 ## 0.1.1 - 2026-06-15
 
 - Added explicit reply modes for vent threads, operator-advice threads, diagnostic threads, and recommendation threads.

@@ -17,14 +17,6 @@ Use when any of these are true:
 - the thread is mostly consumer, hobbyist, student, or meme traffic
 - you would have to force relevance to mention the offer
 
-### `monitor`
-
-Use when:
-
-- the pain language is useful, but the author is not a plausible buyer
-- the thread gives market context, but there is no credible contribution angle yet
-- the thread is useful for future query tuning or narrative learning
-
 ### `public reply`
 
 Default mode when:
@@ -132,4 +124,4 @@ If the author says the reply is AI, fake, or shilly:
 
 - If the thread asks `what hidden costs show up when moving from AWS to colo?` and you can name staffing, remote hands, cross-connect, failover, and compliance overhead, use `public reply`.
 - If the thread is `looking for the best vendor in Dallas DM me`, use `dm only` or `ignore` depending on the user's goals.
-- If the thread is just generic industry complaining with no operating detail, use `monitor` or `ignore`.
+- If the thread is just generic industry complaining with no operating detail, use `ignore`.

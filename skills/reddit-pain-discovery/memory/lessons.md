@@ -52,6 +52,10 @@ Each lesson follows this structure:
 **What happened:** A reply that used process language like `scorecard`, `QBR`, and `RCA` landed badly in a thread that was mainly venting about an industry-wide support decline.
 **Rule:** Classify reply mode before drafting. Vent threads need pattern recognition and restraint, not a management framework. If the author calls the reply AI or shilly, disengage instead of defending the toolchain.
 
+### 2026-06-18 | Goodput beats visibility
+**What happened:** It became too easy to treat broad relevance or audience visibility as success even when the surfaced threads were weak engagement opportunities.
+**Rule:** Optimize Reddit discovery for goodput. Count only threads with substantive external discussion and a credible public-engagement angle as success. Visibility-only hits belong in tuning notes, not in the win column.
+
 ## Active Rules
 
 1. Read `lessons.md` before building queries.
@@ -65,3 +69,4 @@ Each lesson follows this structure:
 9. Separate raw surfaced-post counts from the smaller kept set.
 10. Default to public reply before DM.
 11. Report search window and actual age cutoff separately.
+12. Optimize for goodput, not visibility-only relevance.

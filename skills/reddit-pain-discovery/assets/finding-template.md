@@ -33,7 +33,7 @@
    - Thread:
    - URL:
    - Disposition:
-   - Engagement mode:
+   - Action type:
    - Exclusion flags:
    - Slop flags:
    - Thread fit:
@@ -49,4 +49,4 @@
 
 - Best search phrases to expand:
 - Best subreddits to narrow into:
-- Whether comment crawling is justified:
+- Best live reply follow-ups or search retunes:

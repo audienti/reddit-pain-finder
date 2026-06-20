@@ -1,7 +1,7 @@
 {
   "name": "reddit-pain-finder",
-  "version": "0.1.1",
-  "description": "Turn an offer into pain-first Reddit queries, ranked live threads, and thread-specific reply drafts.",
+  "version": "0.1.2",
+  "description": "Turn an offer into ranked live Reddit threads worth engaging now for buyer signal or audience visibility.",
   "author": {
     "name": "William Flanagan",
     "email": "wflanagan@audienti.com"
@@ -18,9 +18,9 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Reddit Pain Finder",
-    "shortDescription": "Find real Reddit threads where prospects describe the problem in their own words.",
-    "longDescription": "Turns an offer URL or short offer summary into pain-first Reddit search queries, runs bounded discovery against the Apify Reddit scraper, ranks the best threads by buyer fit and urgency, filters self-promo and AI slop, and drafts thread-specific public replies when needed.",
+    "displayName": "Reddit Signal Finder",
+    "shortDescription": "Find real Reddit threads worth engaging now for buyer signal or audience visibility.",
+    "longDescription": "Turns an offer URL or short offer summary into Reddit search queries, runs bounded discovery against the Apify Reddit scraper, filters self-promo and AI slop, keeps only engage-now threads, and drafts thread-specific public replies when needed.",
     "developerName": "William Flanagan",
     "category": "Sales",
     "capabilities": [
@@ -28,9 +28,9 @@
       "Write"
     ],
     "defaultPrompt": [
-      "Find Reddit pain for this offer and show the best threads.",
+      "Find Reddit signal for this offer and show the best threads.",
       "Turn this offer into Reddit search queries, findings, and reply drafts.",
-      "Find real Reddit conversations where this ICP is complaining about the problem."
+      "Find real Reddit conversations where this ICP is exposing the problem or the audience."
     ],
     "brandColor": "#FF4500"
   }
