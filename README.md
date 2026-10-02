@@ -1,23 +1,67 @@
-# Reddit Signal Finder
+# Reddit Pain Finder
 
-Reddit Signal Finder is a Codex and Claude Code plugin for turning an offer
-into real Reddit threads worth engaging now for buyer signal or audience
-visibility.
+Reddit Pain Finder is a free plugin for Claude Code and Codex. Tell it what you
+sell, and it finds real Reddit threads where buyers are describing that problem
+right now. It keeps only the threads worth answering this week, and it can draft
+a helpful reply for each one.
 
-It is built for signal discovery, language capture, and reply drafting. Instead
-of guessing how buyers talk, it helps you find the threads where they are
+Instead of guessing how buyers talk, you find the threads where they are
 already saying it.
 
-## What the plugin provides
+Watch the tutorial: video coming soon.
 
-- A `reddit-pain-discovery` skill under `skills/reddit-pain-discovery/`
-- Query-building guidance under `references/`
-- A reply-style rubric tuned for Reddit-native engagement
-- Skill-local memory for domain, URL, ICP, seed-pack, run-ledger, and comment notes
-- A helper script to resolve and scaffold memory note paths
-- A helper script to normalize Reddit datasets into the shared goodput funnel
-- Codex marketplace metadata at `.codex-plugin/plugin.json`
-- Claude Code marketplace metadata at `.claude-plugin/plugin.json`
+## Install
+
+The plugin is listed in the Audienti marketplace
+([audienti/plugins](https://github.com/audienti/plugins)). Add the marketplace
+once, then install the plugin.
+
+### Claude Code
+
+In a Claude Code session:
+
+```text
+/plugin marketplace add audienti/plugins
+/plugin install reddit-pain-finder@audienti
+```
+
+Or from your terminal:
+
+```bash
+claude plugin marketplace add audienti/plugins
+claude plugin install reddit-pain-finder@audienti
+```
+
+If the install says to check your access rights, run it again with
+`CLAUDE_CODE_PLUGIN_PREFER_HTTPS=1` set. That makes Claude Code download over
+HTTPS instead of SSH.
+
+### Codex
+
+From your terminal:
+
+```bash
+codex plugin marketplace add audienti/plugins
+codex plugin add reddit-pain-finder@audienti
+```
+
+Or, after adding the marketplace, type `/plugins` inside Codex and install
+**reddit-pain-finder** from the `audienti` marketplace.
+
+## You'll need
+
+- **Claude Code or Codex**, with plugins (skills) turned on.
+- **Web search** turned on in the session. The plugin uses it to understand
+  your offer.
+- **Python 3** on your computer. It runs two small helper scripts.
+- **An Apify account** (recommended) for live Reddit search. The plugin runs
+  the `harshmaur/reddit-scraper` actor on Apify. Connect it one of two ways:
+  - an Apify tool or connector in your Claude Code or Codex session, or
+  - the Apify command line tool, signed in with `apify login`.
+
+  Scraper runs are billed by Apify to your own Apify account. Check
+  Apify's plans before large runs.
+- Your own model usage. The plugin runs on your Claude or Codex account.
 
 ## Best for
 
@@ -41,25 +85,21 @@ The plugin adds a research skill that:
 - ranks the best threads by fit, urgency, and reply opportunity
 - drafts thread-specific replies when asked
 
-## Runtime requirements
+## What's inside
 
-This plugin ships a skill. It does not bundle its own MCP server or app
-connector.
+- The skill is named `reddit-pain-discovery`. Ask for it by name, or just ask
+  Claude or Codex to find Reddit threads for your offer.
 
-It works inside Codex by using the tools already available in the current run.
+- A `reddit-pain-discovery` skill under `skills/reddit-pain-discovery/`
+- Query-building guidance under `references/`
+- A reply-style rubric tuned for Reddit-native engagement
+- Skill-local memory for domain, URL, ICP, seed-pack, run-ledger, and comment notes
+- A helper script to resolve and scaffold memory note paths
+- A helper script to normalize Reddit datasets into the shared goodput funnel
+- Codex marketplace metadata at `.codex-plugin/plugin.json`
+- Claude Code marketplace metadata at `.claude-plugin/plugin.json`
 
-### Required
-
-- Codex plugin support with skill loading enabled
-- access to native web research in the current run
-- `python3` for the bundled memory resolver script
-
-### Recommended
-
-- an Apify tool surface in the current run
-- or an authenticated local `apify` CLI session
-
-### What happens without them
+## If Apify isn't set up
 
 - without Apify tooling or an authenticated CLI, the plugin can still build the
   offer summary, pain statements, query sets, and ranking framework
@@ -145,8 +185,9 @@ For the Audienti Codex marketplace catalog, the entry should use:
 ## Validation
 
 ```bash
-python3 /Users/williamflanagan/.codex/skills/.system/plugin-creator/scripts/validate_plugin.py .
-python3 /Users/williamflanagan/.codex/skills/.system/skill-creator/scripts/quick_validate.py skills/reddit-pain-discovery
+# Codex's plugin and skill validators (from your Codex skills folder)
+python3 ~/.codex/skills/.system/plugin-creator/scripts/validate_plugin.py .
+python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py skills/reddit-pain-discovery
 python3 skills/reddit-pain-discovery/scripts/resolve_memory.py --url https://example.com --icp "AI founders"
 python3 skills/reddit-pain-discovery/scripts/normalize_apify_search_results.py --input sample.json
 ```

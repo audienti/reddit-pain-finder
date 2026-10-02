@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased
+
+- Settled on one user-facing name that matches the marketplace listing: Reddit
+  Pain Finder (`reddit-pain-finder`). The skill inside is still
+  `reddit-pain-discovery`.
+- README: added install steps for Claude Code and Codex, a "You'll need"
+  section (Apify, web search, Python 3), and a tutorial placeholder.
+- README: replaced a machine-specific validator path with a generic one.
+
 ## 0.1.2 - 2026-06-20
 
 - Renamed the user-facing plugin surface to Reddit Signal Finder.

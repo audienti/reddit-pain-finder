@@ -18,7 +18,7 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Reddit Signal Finder",
+    "displayName": "Reddit Pain Finder",
     "shortDescription": "Find real Reddit threads worth engaging now for buyer signal or audience visibility.",
     "longDescription": "Turns an offer URL or short offer summary into Reddit search queries, runs bounded discovery against the Apify Reddit scraper, filters self-promo and AI slop, keeps only engage-now threads, and drafts thread-specific public replies when needed.",
     "developerName": "William Flanagan",
